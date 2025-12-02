@@ -383,6 +383,15 @@ section {
     justify-content: center;
 }
 
+.project-logo {
+    max-height: 120px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
@@ -565,6 +574,15 @@ section {
 .invited-icon {
     font-size: 3rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invited-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
 }
 
 .invited-details {
