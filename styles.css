@@ -122,11 +122,12 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 80px;
+    padding-bottom: 3rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     overflow: hidden;
@@ -1279,6 +1280,14 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1308,14 +1317,82 @@ section {
         font-size: 1.2rem;
     }
 
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
     .section-title {
         font-size: 2rem;
     }
 
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .stat-item {
+        padding: 1.25rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .resume-item,
     .research-item,
     .publication-item,
-    .essay-item {
+    .essay-item,
+    .invited-item {
         flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .invited-icon {
+        font-size: 2.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .invited-logo {
+        height: 60px;
+    }
+
+    .invited-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .invited-meta {
+        font-size: 0.95rem;
+    }
+
+    .invited-description {
+        font-size: 0.95rem;
     }
 
     .education-timeline {
@@ -1332,10 +1409,51 @@ section {
     .applications-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        margin-bottom: 0;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .project-logo {
+        max-height: 100px;
+    }
+
+    .project-content {
+        padding: 1.25rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+    }
+
+    .recommendation-card {
+        padding: 1.5rem;
+    }
+
+    .contact-info-card {
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 2.5rem 0;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -1344,9 +1462,91 @@ section {
         font-size: 1.2rem;
     }
 
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
     .btn {
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-stats {
+        gap: 1rem;
+    }
+
+    .stat-item {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+        min-height: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .project-logo {
+        max-height: 80px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .invited-logo {
+        height: 50px;
+    }
+
+    .invited-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .invited-meta {
+        font-size: 0.9rem;
+    }
+
+    .invited-description {
+        font-size: 0.9rem;
+    }
+
+    .recommendation-card {
+        padding: 1.25rem;
+    }
+
+    .recommendation-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-card {
+        padding: 1.25rem;
     }
 }
 
