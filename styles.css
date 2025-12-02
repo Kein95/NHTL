@@ -71,17 +71,19 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: color 0.3s ease;
     position: relative;
     white-space: nowrap;
+    display: inline-block;
 }
 
 .nav-link:hover {
