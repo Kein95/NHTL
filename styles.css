@@ -32,6 +32,24 @@ body {
     background-color: var(--bg-white);
 }
 
+/* Justify all text paragraphs and descriptions */
+p {
+    text-align: justify;
+}
+
+/* Exceptions - keep center alignment for specific elements */
+.section-header p,
+.stat-item p,
+.recommendation-card p,
+.hero-content p,
+.footer p {
+    text-align: center;
+}
+
+.hero-description {
+    text-align: center;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -281,6 +299,7 @@ section {
     color: var(--text-light);
     max-width: 700px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 /* About Section */
@@ -486,6 +505,12 @@ section {
 .projects-note p {
     color: var(--text-dark);
     line-height: 1.8;
+    text-align: justify;
+}
+
+/* Resume Description */
+.resume-description {
+    text-align: justify;
 }
 
 /* Awards Section */
@@ -1373,6 +1398,14 @@ section {
         gap: 1.5rem;
     }
 
+    .about-text p,
+    .publication-description,
+    .essay-description,
+    .resume-description,
+    .recommendation-description {
+        text-align: justify;
+    }
+
     .invited-icon {
         font-size: 2.5rem;
         width: 100%;
@@ -1393,6 +1426,7 @@ section {
 
     .invited-description {
         font-size: 0.95rem;
+        text-align: justify;
     }
 
     .education-timeline {
@@ -1434,6 +1468,7 @@ section {
 
     .project-description {
         font-size: 0.95rem;
+        text-align: justify;
     }
 
     .recommendation-card {
@@ -1519,6 +1554,7 @@ section {
 
     .project-description {
         font-size: 0.9rem;
+        text-align: justify;
     }
 
     .invited-logo {
@@ -1535,6 +1571,7 @@ section {
 
     .invited-description {
         font-size: 0.9rem;
+        text-align: justify;
     }
 
     .recommendation-card {
