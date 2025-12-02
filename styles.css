@@ -340,6 +340,10 @@ section {
     font-weight: 700;
     color: #f59e0b;
     margin-bottom: 0.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stat-label {
