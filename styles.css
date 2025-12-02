@@ -38,7 +38,6 @@ p {
 }
 
 /* Exceptions - keep center alignment for specific elements */
-.section-header p,
 .stat-item p,
 .recommendation-card p,
 .hero-content p,
@@ -48,6 +47,11 @@ p {
 
 .hero-description {
     text-align: center;
+}
+
+/* Section description should be justified, not centered */
+.section-description {
+    text-align: justify;
 }
 
 .container {
